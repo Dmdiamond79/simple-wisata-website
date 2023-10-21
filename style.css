@@ -1,0 +1,221 @@
+html{
+    list-style-type: none;
+    background: url(header1.jpeg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color:azure;
+}
+
+
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Apply glassmorphism background effect */
+  body {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Header styles */
+  header {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1; /* Make the navigation items span from left to right */
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px; /* Add margin for spacing between items */
+    text-align: center; /* Center-align the text */
+    transition: color 0.3s; /* Add a transition for the hover effect */
+  }
+  
+  nav a:hover {
+    color: white; /* Change the text color to white on hover */
+  }
+  
+  .logo {
+    width: 60px; /* Adjust the width of the logo image as needed */
+    height: auto;
+    margin-right: auto; /* Move the logo to the left */
+  }
+
+  
+  ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-right: 300px;
+    gap: 150px;
+    font-size: 20px;
+  }
+  
+  ul li a {
+    color: #fff; /* Text color */
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  ul li a:hover{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+  
+  /* Main content styles */
+  main {
+    padding: 20px;
+  }
+  
+  /* Add these styles to make the image slider larger */
+/* Adjust the styles for the image slider */
+.image-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    overflow: auto;
+    max-width: 100%; /* Set a maximum width for the image slider */
+  }
+  
+  .image-slider img {
+    width: 1000px; /* Set a fixed width for the images */
+    height: 500px; /* Allow the height to adjust accordingly */
+    display: none;
+  }
+  
+  .image-slider img.active {
+    display: block;
+  }
+  
+  /* Styles for the previous and next buttons */
+  .prev-button,
+  .next-button {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .prev-button:hover,
+  .next-button:hover {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+
+  
+  
+  .main-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .main-content {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    flex: 1; /* Make it span from left to right */
+    max-width: none; /* Allow it to span the full width */
+  }
+  
+  
+  .main-content img {
+    max-width: 100%; /* Limit image width to the size of its container */
+    height: auto; /* Maintain the image's aspect ratio */
+    display: block; /* Center the image horizontally within its container */
+    margin: 0 auto; /* Center the image horizontally within its container */
+  }
+  /* Article styles */
+  .article-container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center; /* Center-align the content */
+    margin-top: 20px;
+  }
+  
+  .article-menu {
+    display: flex;
+    justify-content: center; /* Center-align the buttons */
+    gap: 20px;
+  }
+  
+  .btn-content {
+    cursor: pointer;
+    background: rgba(0, 0, 255, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    flex: 1; /* Make each button occupy an equal portion of the container */
+  }
+  
+  .btn-content:hover {
+    background: rgba(0, 0, 255, 0.2);
+  }
+  
+  .content-image {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+  }
+
+  .read-more {
+    margin-top: 10px;
+    font-weight: bold; /* Make the text bold */
+    color: white; /* Change the text color to red */
+  }
+  
+  /* Footer styles */
+  footer {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    .main-content-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .main-content {
+      max-width: 100%;
+    }
+  
+    .article-container {
+      max-width: 100%;
+    }
+  }
+  
+  .heading{
+    font-weight: bold;
+  }
