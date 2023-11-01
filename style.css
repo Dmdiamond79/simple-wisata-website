@@ -147,7 +147,7 @@ html{
     max-width: 100%; /* Limit image width to the size of its container */
     height: auto; /* Maintain the image's aspect ratio */
     display: block; /* Center the image horizontally within its container */
-    margin: 0 auto; /* Center the image horizontally within its container */
+    margin: 0 auto; 
   }
   /* Article styles */
   .article-container {
